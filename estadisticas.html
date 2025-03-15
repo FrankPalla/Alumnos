@@ -1,0 +1,58 @@
+<!DOCTYPE  html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas - Sistema de Gestión de Alumnos</title>
+  <meta name="description" content="Built with jdoodle.ai - Visualice estadísticas detalladas de sus alumnos, ingresos y pagos pendientes.">
+  <meta property="og:title" content="Estadísticas - Sistema de Gestión de Alumnos">
+  <meta property="og:description" content="Built with jdoodle.ai - Dashboard completo con estadísticas de alumnos e ingresos para profesores particulares.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍🏫</text></svg>">
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <span>📚 Gestión de Alumnos</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Agregar Alumno</a>
+        <a href="lista.html">Lista de Alumnos</a>
+        <a href="estadisticas.html" class="active">Estadísticas</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-info">
+          <p class="stat-label">Total Alumnos</p>
+          <p id="totalStudents" class="stat-value">0</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <div class="stat-info">
+          <p class="stat-label">Ingresos Mensuales</p>
+          <p id="monthlyIncome" class="stat-value">$0</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">⚠️</div>
+        <div class="stat-info">
+          <p class="stat-label">Pagos Vencidos</p>
+          <p id="overduePayments" class="stat-value">0</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 

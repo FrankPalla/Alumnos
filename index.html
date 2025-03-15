@@ -1,0 +1,75 @@
+<!DOCTYPE  html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Alumnos</title>
+  <meta name="description" content="Built with jdoodle.ai - Sistema completo para gestionar alumnos particulares, pagos y clases.">
+  <meta property="og:title" content="Sistema de Gestión de Alumnos">
+  <meta property="og:description" content="Built with jdoodle.ai - Gestione sus alumnos particulares de manera eficiente con nuestro sistema web.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍🏫</text></svg>">
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <span>📚 Gestión de Alumnos</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Agregar Alumno</a>
+        <a href="lista.html">Lista de Alumnos</a>
+        <a href="estadisticas.html">Estadísticas</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <form id="studentForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label>Apellido</label>
+          <input type="text" name="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Fecha de Ingreso</label>
+          <input type="date" name="startDate" required>
+        </div>
+        <div class="form-group">
+          <label>Próximo Pago</label>
+          <input type="date" name="nextPaymentDate" required>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Monto Mensual</label>
+          <input type="number" name="monthlyFee" required>
+        </div>
+        <div class="form-group">
+          <label>Materia</label>
+          <select name="subject">
+            <option value="Apoyo escolar">Apoyo escolar</option>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Lengua">Lengua</option>
+            <option value="Ciencias">Ciencias</option>
+            <option value="Inglés">Inglés</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Agregar Alumno</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
